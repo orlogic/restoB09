@@ -11,18 +11,56 @@ li {
     list-style: none;
 }
 
-.header-logo {
-    float: left;
-    font-size: 36px;
-    padding: 20px 40px;
-    color: aliceblue;
+/* awal navigasi */
+header {
+    background: rgb(1, 1, 59);
+    width: 100%;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
 }
 
-.header-list li {
-    float: right;
-    padding: 20px 40px;
-    color: aliceblue;
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
 }
+
+nav ul {
+    background-color: rgba(1, 1, 59, 0.842);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(1, 1, 59);
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {
+        max-height: 0;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 50px;
+        text-align: left;
+    }
+}
+
+/* akhir navigasi  */
+
 
 .container {
     width: 1170px;
