@@ -1,48 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 
-<head>
-    <meta charset="utf-8">
-    <title>B09</title>
-    <link rel="stylesheet" href="header1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+header {
+    background: rgba(1, 1, 102, 0.644);
+    width: 100%;
+    padding: 40px 0;
+    padding-bottom: 0;
+    color: antiquewhite;
+    text-align: center;
+    position: fixed;
+}
 
-</head>
+header p {
+    color: antiquewhite;
+    opacity: 0.7;
+    font-style: italic;
+}
 
-<body>
-    <header>
-        <h1>Resto B09</h1>
-        <p>"The Best New York Karta Restaurant"</p>
-        <nav>
-            <ul>
-                <a href="#">
-                    <li>Promo</li>
-                </a>
-                <a href="#">
-                    <li>Makanan</li>
-                </a>
-                <a href="#">
-                    <li>Minuman</li>
-                </a>
-                <a href="#">
-                    <li>Lokasi</li>
-                </a>
-                <a href="#">
-                    <li>Kontak</li>
-                </a>
-                <a href="#">
-                    <li>Tentang</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner">
-        <div class="container">
-            <h1>Welcome to B09 Resto</h1>
-            <h2>LOVES HEALTY FOOD</h2>
-        </div>
-    </div>  
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
 
-</body>
+nav ul {
+    background-color: rgba(1, 1, 46, 0.842);
+    overflow: hidden;
+    color: antiquewhite;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
 
-</html>
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(1, 1, 61);
+}
+
+@media screen and (max-width: 500px) {
+    body nav ul {
+        max-height: 0;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 50px;
+        text-align: left;
+    }
+}
+
+
+/* akhir header */
+
+
+/* -- Bagian Atas -- */
+
+.banner .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    animation: slide 2s 0.4s backwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.banner {
+    padding-top: 200px;
+    padding-bottom: 180px;
+    color: #dbc1ac;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.3)), url(https://i.ibb.co/gzSHpvJ/baked-goods-1853261-1920.jpg)no-repeat center/cover;
+    background-size: 100% 100%;
+}
+
+.banner h1 {
+    padding-bottom: 10px;
+    padding-top: 80px;
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+    line-height: 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+
+/* Untuk Tablet */
+
+@media all and (max-width: 1000px) {
+    .banner h1 {
+        font-size: 60px;
+        line-height: 10px;
+        margin-top: 80px;
+    }
+    .banner h2 {
+        font-size: 30px;
+    }
+    .banner {
+        padding-bottom: 120px;
+    }
+}
+
+
+/* Untuk Smartphone */
+
+@media all and (max-width: 670px) {
+    .banner h1 {
+        font-size: 39px;
+        text-align: left;
+        line-height: 30px;
+    }
+    .banner h2 {
+        font-size: 28px;
+        text-align: left;
+        line-height: 30px;
+    }
+    .banner {
+        padding-bottom: 90px;
+        padding-top: 130px
+    }
+}
+
+
+/* -- Akhir Bagian Atas -- */
