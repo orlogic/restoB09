@@ -1,130 +1,48 @@
-body {
-    margin: 0;
-    font-family: "Lucida Grande";
-}
+<!DOCTYPE html>
+<html lang="en">
 
-a {
-    text-decoration: none;
-}
+<head>
+    <meta charset="utf-8">
+    <title>B09</title>
+    <link rel="stylesheet" href="header1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-li {
-    list-style: none;
-}
+</head>
 
-/* awal navigasi */
-header {
-    background: rgba(1, 1, 46, 0.842);
-    width: 100%;
-    padding: 40px 0;
-    padding-bottom: 0;
-    color: antiquewhite;
-    text-align: center;
-    position: fixed;
-}
+<body>
+    <header>
+        <h1>Resto B09</h1>
+        <p>"The Best New York Karta Restaurant"</p>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>Promo</li>
+                </a>
+                <a href="#">
+                    <li>Makanan</li>
+                </a>
+                <a href="#">
+                    <li>Minuman</li>
+                </a>
+                <a href="#">
+                    <li>Lokasi</li>
+                </a>
+                <a href="#">
+                    <li>Kontak</li>
+                </a>
+                <a href="#">
+                    <li>Tentang</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <h1>Welcome to B09 Resto</h1>
+            <h2>LOVES HEALTY FOOD</h2>
+        </div>
+    </div>  
 
-header p {
-    color: antiquewhite;
-    opacity: 0.7;
-    font-style: italic;
-}
+</body>
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: inherit;
-}
-
-nav ul {
-    background-color: rgba(1, 1, 102, 0.842);
-    overflow: hidden;
-    color: antiquewhite;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-}
-
-nav ul li:hover {
-    background-color: rgb(1, 1, 59);
-}
-
-@media screen and (max-width: 500px) {
-    nav ul {
-        max-height: 0;
-    }
-    .showing {
-        max-height: 20em;
-    }
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 15px 50px;
-        text-align: left;
-    }
-}
-
-/* akhir navigasi  */
-
-
-.container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.landpage {
-    padding: 180px 0 100px 0;
-    background-image: url(https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=353&q=80);
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 600px;
-}
-
-.landpage h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
-
-.landpage p {
-    opacity: 0.7;
-    margin-bottom: 3px;
-}
-
-.header {
-    height: 65px;
-    width: 100%;
-    background-color: rgb(1, 1, 59);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    opacity: 0.7;
-}
-
-.menu {
-    height: 500px;
-    padding-bottom: 80px;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-.koki {
-    height: 500px;
-    padding-bottom: 80px;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-footer {
-    height: 200px;
-    color: cornsilk;
-    padding: 1 px;
-    background-color: rgb(1, 1, 59);
-    text-align: center;
-}
+</html>
