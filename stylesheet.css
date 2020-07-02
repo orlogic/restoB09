@@ -13,11 +13,19 @@ li {
 
 /* awal navigasi */
 header {
-    background: rgb(1, 1, 59);
+    background: rgba(1, 1, 46, 0.842);
     width: 100%;
     padding: 40px 0;
-    color: #fff;
+    padding-bottom: 0;
+    color: antiquewhite;
     text-align: center;
+    position: fixed;
+}
+
+header p {
+    color: antiquewhite;
+    opacity: 0.7;
+    font-style: italic;
 }
 
 a {
@@ -27,9 +35,9 @@ a {
 }
 
 nav ul {
-    background-color: rgba(1, 1, 59, 0.842);
+    background-color: rgba(1, 1, 102, 0.842);
     overflow: hidden;
-    color: #fff;
+    color: antiquewhite;
     padding: 0;
     text-align: center;
     margin: 0;
