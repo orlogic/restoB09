@@ -106,6 +106,49 @@ nav ul li:hover {
     font-family: cursive;
 }
 
+/* -- bagian chef -- */
+
+blockquote {
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-done {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+
+.gray-container ul {
+    display: flex;
+
+}
+
+figure {
+    flex: 1;
+    margin: 0 30px;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00C2FF;
+}
+
 
 /* Untuk Tablet */
 
@@ -141,6 +184,17 @@ nav ul li:hover {
         padding-bottom: 90px;
         padding-top: 130px
     }
+    
+    /* -- bagian chef -- */
+    .gray-container ul li:first-child {
+        margin-bottom: 2em;
+    }
+
+    .gray-container ul {
+        display: block;
+    }
+
+    
 }
 
 
